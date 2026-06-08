@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -44,
+        "lat": -18
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 22.37,
+        "feels_like": 21.42,
+        "temp_min": 22.37,
+        "temp_max": 22.37,
+        "pressure": 1015,
+        "humidity": 29,
+        "sea_level": 1015,
+        "grnd_level": 910
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.61,
+        "deg": 277,
+        "gust": 1.81
+    },
+    "clouds": {
+        "all": 12
+    },
+    "dt": 1780856180,
+    "sys": {
+        "country": "BR",
+        "sunrise": 1780824151,
+        "sunset": 1780864049
+    },
+    "timezone": -10800,
+    "id": 3457153,
+    "name": "Minas Gerais",
+    "cod": 200
+}
