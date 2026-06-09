@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 path_name = Path(__file__).parent.parent / 'data' / 'raw_data.json'
-columns_names_to_drop = ['weather', 'weather_icon', 'sys.types']
+columns_names_to_drop = ['weather', 'weather_icon']
 columns_names_to_rename = {
     'base': 'base',
     'visibility': 'visibility',
@@ -79,7 +79,7 @@ def normalize_dataframe(df: pd.DataFrame, columns_to_drop: list[str]) -> pd.Data
         'icon': 'weather_icon'
     })
 
-    df = pd.concat(df, df_weather, axis=1).drop(columns=columns_names_to_drop)
+    df = pd.concat([df, df_weather], axis=1).drop(columns=columns_names_to_drop)
 
     logging.info("DataFrame normalized successfully.")
     return df
@@ -124,3 +124,6 @@ def data_transformation():
 
     df.to_csv(output_path, index=False)
     logging.info(f"Data transformed and saved to {output_path}")
+
+if __name__ == "__main__":
+    data_transformation()

@@ -1,0 +1,2 @@
+base,visibility,datetime,timezone,city_id,city_name,code,longitude,latitude,temperature,feels_like,temp_min,temp_max,pressure,humidity,sea_level,grnd_level,wind_speed,wind_deg,wind_gust,clouds,country,sunrise,sunset,weather_id,weather_main,weather_description
+stations,10000,2026-06-07 15:16:20-03:00,-10800,3457153,Minas Gerais,200,-44,-18,22.37,21.42,22.37,22.37,1015,29,1015,910,0.61,277,1.81,12,BR,2026-06-07 06:22:31-03:00,2026-06-07 17:27:29-03:00,801,Clouds,few clouds
