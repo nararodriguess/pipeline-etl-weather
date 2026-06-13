@@ -27,7 +27,7 @@ def get_engine ():
 
 engine = get_engine()
 
-def load_data(table_name:str, df):
+def load_weather_data(table_name:str, df):
     """
     Load data into the database.
     Args:
@@ -55,4 +55,4 @@ def load_data(table_name:str, df):
 
 if __name__ == "__main__":
     df = pd.read_csv('data/transformed_data.csv')
-    load_data('mg_weather', df)
+    load_weather_data('mg_weather', df)
