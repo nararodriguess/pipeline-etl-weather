@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-def extract_data(url:str) -> list:
+def extract_weather_data(url:str) -> list:
     """
     Extracts data from the given URL and returns it as a list of dictionaries.
 
