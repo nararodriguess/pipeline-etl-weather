@@ -125,5 +125,7 @@ def data_transformation():
     df.to_csv(output_path, index=False)
     logging.info(f"Data transformed and saved to {output_path}")
 
+    return df
+
 if __name__ == "__main__":
     data_transformation()
